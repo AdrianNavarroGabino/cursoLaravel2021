@@ -24,3 +24,15 @@ Route::get('/home', function () {
 Route::get('/sobrenosotros', function () {
     return "Esta es la página que habla sobre nosotros";
 });
+
+Route::get('/contacto', function () {
+    return "Aquí podrás contactar";
+});
+
+Route::get('/foro', function () {
+    return "Aquí está el foro";
+});
+
+Route::get('/post/{id}', function ($id) {
+    return "Este es el post nº " . $id;
+});
