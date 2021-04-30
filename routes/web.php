@@ -33,6 +33,6 @@ Route::get('/foro', function () {
     return "Aquí está el foro";
 });
 
-Route::get('/post/{id}', function ($id) {
-    return "Este es el post nº " . $id;
+Route::get('/post/{id}/{nombre}', function ($id, $nombre) {
+    return "Este es el post nº " . $id . " creado por " . $nombre;
 });
