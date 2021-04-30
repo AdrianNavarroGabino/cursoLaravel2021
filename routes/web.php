@@ -35,4 +35,4 @@ Route::get('/foro', function () {
 
 Route::get('/post/{id}/{nombre}', function ($id, $nombre) {
     return "Este es el post nº " . $id . " creado por " . $nombre;
-});
+})->where('nombre','[a-zA-Z]+');
