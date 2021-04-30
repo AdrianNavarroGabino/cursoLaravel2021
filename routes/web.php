@@ -13,8 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
-    //return view('welcome');
+Route::get('/', function () {
+    return view('welcome');
+});
 
+Route::get('/home', function () {
     return "Hemos llegado a la página inicial";
+});
+
+Route::get('/sobrenosotros', function () {
+    return "Esta es la página que habla sobre nosotros";
 });
